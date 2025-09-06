@@ -1,0 +1,21 @@
+let myName = "nischalshetty";
+let anotherName = myName;
+
+anotherName = "cac";
+
+console.log(myName);       // 👉 "nischalshetty"
+console.log(anotherName);  // 👉 "cac"
+//Coz this is primitive and being stored in stack which only stores copies and not reference,so copy element can't change the og element
+
+let userOne = {
+  email: "user@gmail.com"
+};
+
+let userTwo = userOne;  // Copying the reference
+
+userTwo.email = "changed@gmail.com";
+
+console.log(userOne.email); // 👉 "changed@gmail.com"
+console.log(userTwo.email); // 👉 "changed@gmail.com"
+//here this is object so being stored in heap which stores references,so og object value is also changed
+
