@@ -2,5 +2,6 @@
 (function() {
     console.log("I run immediately!");
 })();
+
 //()()--HAVE TO USE LIKE THIS 
 //HAVE TO USE SEMICOLON AFTER IIFE
